@@ -32,4 +32,5 @@ const HooksCounter = () => {
 
 export default HooksCounter;
 
-//  checking for change though firstB
+//  checking for change through  secondB
+
