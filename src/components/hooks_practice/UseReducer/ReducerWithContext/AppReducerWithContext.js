@@ -38,3 +38,5 @@ const AppReducerWithContext = () => {
 };
 
 export default AppReducerWithContext;
+
+//Add this code in app.js
