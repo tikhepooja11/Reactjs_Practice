@@ -17,11 +17,14 @@ import ComponentB from "./components/hooks_practice/UseReducer/ReducerWithContex
 import ComponentC from "./components/hooks_practice/UseReducer/ReducerWithContext/ComponentC";
 
 import React, { useReducer, createContext } from "react";
+import DataFetchingWithUseState from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseState";
+import DataFetchingWithUseReducer from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseReducer";
 
 function App() {
   return (
     <div style={{ background: "lightblue" }}>
-      {/* <h1> Welcome to your React Hooks practice</h1>
+      {
+        /* <h1> Welcome to your React Hooks practice</h1>
       <p> My shopping cards</p>
       <Header name="Pooja Tikhe" title="first card"></Header>
       <hr></hr>
@@ -55,9 +58,13 @@ function App() {
       <MyProvider>
         <MyComponent />
       </MyProvider>
-      <hr></hr>*/}
+      <hr></hr>*/
 
-      <UseReducerHook />
+        <UseReducerHook />
+      }
+      <h2>Comparison between useState & useReducer</h2>
+      <DataFetchingWithUseState />
+      <DataFetchingWithUseReducer />
       <hr></hr>
     </div>
   );
