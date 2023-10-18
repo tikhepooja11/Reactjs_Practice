@@ -1,10 +1,10 @@
 import logo from "./logo.svg";
 import Header from "./components/header";
 import "./App.css";
-import ClassCounter from "./components/hooks_practice/ClassCounter";
-import HooksCounter from "./components/hooks_practice/HooksCounter";
-import UseStateObject from "./components/hooks_practice/useStateObject";
-import UseStateArray from "./components/hooks_practice/UseStateArray";
+import ClassCounter from "./components/hooks_practice/UseState/ClassCounter";
+import HooksCounter from "./components/hooks_practice/UseState/HooksCounter";
+import UseStateObject from "./components/hooks_practice/UseState/useStateObject";
+import UseStateArray from "./components/hooks_practice/UseState/UseStateArray";
 import UseEffectBasic from "./components/hooks_practice/UseEffect/UseEffectBasic";
 import FetchDataWithUseEffect from "./components/hooks_practice/UseEffect/FetchDataWithUseEffect";
 import FetchDataSinglePost from "./components/hooks_practice/UseEffect/FetchDataSinglePost";
