@@ -22,6 +22,7 @@ import DataFetchingWithUseReducer from "./components/hooks_practice/UseReducer/D
 import UseMemoExample from "./components/hooks_practice/UseMemo/UseMemoExample";
 import SecondExampleCounter from "./components/hooks_practice/UseMemo/SecondExampleCounter";
 import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
+import UserefVSnormalVSusestate from "./components/hooks_practice/UseRefHook/UserefVSnormalVSusestate";
 
 function App() {
   return (
@@ -74,9 +75,12 @@ function App() {
       <hr></hr>
 
       <SecondExampleCounter />
-      <hr></hr>*/}
+      <hr></hr>
 
       <ParentComponent />
+      <hr></hr>*/}
+
+      <UserefVSnormalVSusestate />
     </div>
   );
 }
