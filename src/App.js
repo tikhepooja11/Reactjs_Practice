@@ -21,6 +21,7 @@ import DataFetchingWithUseState from "./components/hooks_practice/UseReducer/Dat
 import DataFetchingWithUseReducer from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseReducer";
 import UseMemoExample from "./components/hooks_practice/UseMemo/UseMemoExample";
 import SecondExampleCounter from "./components/hooks_practice/UseMemo/SecondExampleCounter";
+import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
       <hr></hr>
 
       <UseReducerHook />
+      <hr></hr>
       
       <h2>Comparison between useState & useReducer</h2>
       <DataFetchingWithUseState />
@@ -69,9 +71,12 @@ function App() {
       <hr></hr>
 
       <UseMemoExample />
-      <hr></hr>*/}
+      <hr></hr>
 
       <SecondExampleCounter />
+      <hr></hr>*/}
+
+      <ParentComponent />
     </div>
   );
 }
