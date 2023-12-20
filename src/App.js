@@ -27,6 +27,7 @@ import FormDisplay from "./components/FormDisplay";
 import Timer from "./components/Timer";
 import Parent from "./components/parent-child/Parent";
 import Webpage from "./components/component-composition/Webpage";
+import DisplayConfigDrivenUI from "./components/config-driven-UI/DisplayConfigDrivenUI";
 
 function App() {
   return (
@@ -94,9 +95,12 @@ function App() {
       
 
       <Parent />
-      */}
+      
 
       <Webpage />
+      */}
+
+      <DisplayConfigDrivenUI />
     </div>
   );
 }
