@@ -23,6 +23,10 @@ import UseMemoExample from "./components/hooks_practice/UseMemo/UseMemoExample";
 import SecondExampleCounter from "./components/hooks_practice/UseMemo/SecondExampleCounter";
 import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
 import UserefVSnormalVSusestate from "./components/hooks_practice/UseRefHook/UserefVSnormalVSusestate";
+import FormDisplay from "./components/FormDisplay";
+import Timer from "./components/Timer";
+import Parent from "./components/parent-child/Parent";
+import Webpage from "./components/component-composition/Webpage";
 
 function App() {
   return (
@@ -78,9 +82,21 @@ function App() {
       <hr></hr>
 
       <ParentComponent />
-      <hr></hr>*/}
+      <hr></hr>
 
       <UserefVSnormalVSusestate />
+      <hr></hr>
+
+      <FormDisplay />
+      
+
+      <Timer />
+      
+
+      <Parent />
+      */}
+
+      <Webpage />
     </div>
   );
 }
