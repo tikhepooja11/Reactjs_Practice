@@ -30,7 +30,9 @@ const FetchDataOnButtonClick = () => {
         value={id}
         onChange={(e) => setId(e.target.value)}
       ></input>
-      <button onClick={handleButtonClick}>Fetch Post</button>
+      <button className=" ms-2 m-3 p-2 bg-red-500" onClick={handleButtonClick}>
+        Fetch Post
+      </button>
       <h2>{post.title}</h2>
     </div>
   );

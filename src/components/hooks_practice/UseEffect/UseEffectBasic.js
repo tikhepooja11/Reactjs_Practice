@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 const UseEffectBasic = () => {
   const [count, setCount] = useState(0);
-  const [name, setName] = useState("");
   useEffect(() => {
     document.title = count; //  sets this title only on changing count value.
   }, [count]);

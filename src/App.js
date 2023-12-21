@@ -10,12 +10,17 @@ import FetchDataWithUseEffect from "./components/hooks_practice/UseEffect/FetchD
 import FetchDataSinglePost from "./components/hooks_practice/UseEffect/FetchDataSinglePost";
 import FetchDataOnButtonClick from "./components/hooks_practice/UseEffect/FetchDataOnButtonClick";
 import MyProvider from "./components/hooks_practice/UseContext/MyProvider";
-import MyComponent from "./components/hooks_practice/UseContext/MyComponent";
 import UseReducerHook from "./components/hooks_practice/UseReducer/UseReducerHook";
 import ComponentA from "./components/hooks_practice/UseReducer/ReducerWithContext/ComponentA";
 import ComponentB from "./components/hooks_practice/UseReducer/ReducerWithContext/ComponentB";
 import ComponentC from "./components/hooks_practice/UseReducer/ReducerWithContext/ComponentC";
-
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Routes,
+  Route,
+} from "react-router-dom";
+import ReactDOM from "react-dom";
 import React, { useReducer, createContext } from "react";
 import DataFetchingWithUseState from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseState";
 import DataFetchingWithUseReducer from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseReducer";
@@ -28,6 +33,10 @@ import Timer from "./components/Timer";
 import Parent from "./components/parent-child/Parent";
 import Webpage from "./components/component-composition/Webpage";
 import DisplayConfigDrivenUI from "./components/config-driven-UI/DisplayConfigDrivenUI";
+import MyComponent from "./components/hooks_practice/UseEffect/Both_state_props_dependency_passed";
+import ControlledComponent from "./components/controlled-component/ControlledComponent";
+import ArrayToListRender from "./components/list-rendering/ArrayToListRender";
+import BrowserRouter from "./components/react-routing/BrowserRouter";
 
 function App() {
   return (
@@ -52,16 +61,20 @@ function App() {
       <hr></hr>
 
       <UseEffectBasic />
-      <hr></hr>
+      <hr></hr> 
 
       <FetchDataWithUseEffect />
       <hr></hr>
 
+    
       <FetchDataSinglePost />
       <hr></hr>
 
+     
       <FetchDataOnButtonClick />
       <hr></hr>
+
+      <MyComponent title={"Aarti Tikhe"} />
 
       <MyProvider>
         <MyComponent />
@@ -98,9 +111,14 @@ function App() {
       
 
       <Webpage />
-      */}
+    
 
       <DisplayConfigDrivenUI />
+        
+
+      <ControlledComponent />*/}
+
+      <ArrayToListRender itemsArray={[1, 2, 4, 5]} />
     </div>
   );
 }
