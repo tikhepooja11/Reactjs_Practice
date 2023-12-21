@@ -2,9 +2,11 @@ import Contact from "./Contact";
 import Home from "./Home";
 import About from "./About";
 import ErrorPage from "./ErrorPage";
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
+const LazyLoadedComponent = lazy(() =>
+  import("../lazy-loading/LazyLoadedComponent")
+);
 // Assuming you have components like AppLayout and About
 // const Home = () => <div>Home Page</div>;
 // const Contact = () => <div>Contact Layout</div>;
@@ -27,6 +29,14 @@ function App() {
     {
       path: "*",
       element: <ErrorPage />,
+    },
+    {
+      path: "/lazy-loading",
+      element: (
+        <Suspense>
+          <LazyLoadedComponent />
+        </Suspense>
+      ),
     },
   ]);
   const root = ReactDOM.createRoot(document.getElementById("root"));
