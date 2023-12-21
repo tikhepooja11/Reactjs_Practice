@@ -2,7 +2,7 @@ In this repository I am implementing all the react concepts along with example.
 
 1. React Hooks
 
-
+   
     a. UseState
     b. UseEffect
     c. UseContext
@@ -18,3 +18,4 @@ In this repository I am implementing all the react concepts along with example.
 6. List - Rendering
 7. Conditional - Rendering
 8. React - Routing
+9. Lazy - loading / code-splitting /dynamic-loading/on-demand-loading/dynamic-bundling/code-chunking
