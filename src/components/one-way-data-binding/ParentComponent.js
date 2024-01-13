@@ -18,3 +18,4 @@ const ParentComponent = () => {
 // };
 
 // Conclusion -> This means that changes in the parent component can affect the child components, but not vice versa.
+// In both examples, data and actions flow from the parent to the child, maintaining a clear and predictable flow in the React application.
