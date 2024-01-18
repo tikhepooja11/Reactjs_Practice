@@ -1,3 +1,6 @@
+//    useState -> use to remember state of the component each nd every time though the same component is called multiple times
+
+
 import React, { useState } from "react";
 import { BiPlusMedical } from "react-icons/bi";
 import { FaMinus } from "react-icons/fa";
