@@ -35,3 +35,10 @@ debounceFunction("reactjs");
 debounceFunction("react hooks");
 // The actual search function will be invoked only after 300 milliseconds without any new keystrokes.
 
+
+
+
+The key difference between debouncing and throttling lies in how they handle the timing of function execution. 
+While debouncing delays the execution until a quiet period, throttling ensures a function is executed regularly at the specified interval, 
+ignoring some of the calls if they happen too frequently.
+
