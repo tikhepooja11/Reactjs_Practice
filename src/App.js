@@ -30,7 +30,6 @@ import ParentComponent from "./components/hooks_practice/UseCallback/ParentCompo
 import UserefVSnormalVSusestate from "./components/hooks_practice/UseRefHook/UserefVSnormalVSusestate";
 import FormDisplay from "./components/FormDisplay";
 import Timer from "./components/Timer";
-import Parent from "./components/parent-child/Parent";
 import Webpage from "./components/component-composition/Webpage";
 import DisplayConfigDrivenUI from "./components/config-driven-UI/DisplayConfigDrivenUI";
 import MyComponent from "./components/hooks_practice/UseEffect/Both_state_props_dependency_passed";
