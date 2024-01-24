@@ -28,4 +28,6 @@ In this repository I am implementing all the react concepts along with example.
 16. One way binding
 17. Lazy - loading / code-splitting /dynamic-loading/on-demand-loading/dynamic-bundling/code-chunking
 
+18. App Optimisation using 3 ways -> Lazy loading, useMemo, useCallback
+
    
