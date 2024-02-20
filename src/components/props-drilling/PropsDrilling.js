@@ -37,3 +37,10 @@ const ChildComponent = ({ data }) => {
 };
 
 export default ChildComponent;
+
+
+
+// In summary, while prop drilling involves passing props 
+// down through the component tree, lifting state up involves moving the state to a higher-level component 
+// to make it accessible to multiple components without the need for extensive prop passing. 
+// Lifting state up is often considered a solution to address the challenges posed by prop drilling in larger applications.

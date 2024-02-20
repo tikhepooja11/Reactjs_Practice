@@ -16,6 +16,14 @@ const BrowserRouter = () => {
           <Route Path="/contact" element={<Contact />} exact />
           <Route Path="/about" element={<About />} />
           <Route Path="*" element={<ErrorPage />} />
+          <Route
+            path="/lazy"
+            element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <LazyLoadedComponent />
+              </Suspense>
+            }
+          />
         </Routes>
       </Router>
     </div>
