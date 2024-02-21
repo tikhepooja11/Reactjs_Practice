@@ -26,7 +26,7 @@ import DataFetchingWithUseState from "./components/hooks_practice/UseReducer/Dat
 import DataFetchingWithUseReducer from "./components/hooks_practice/UseReducer/DataFetchingWithUseReducer/DataFetchingWithUseReducer";
 import UseMemoExample from "./components/hooks_practice/UseMemo/UseMemoExample";
 import SecondExampleCounter from "./components/hooks_practice/UseMemo/SecondExampleCounter";
-import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
+// import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
 import UserefVSnormalVSusestate from "./components/hooks_practice/UseRefHook/UserefVSnormalVSusestate";
 import FormDisplay from "./components/FormDisplay";
 import Timer from "./components/Timer";
@@ -36,7 +36,13 @@ import MyComponent from "./components/hooks_practice/UseEffect/Both_state_props_
 import ControlledComponent from "./components/controlled-component/ControlledComponent";
 import ArrayToListRender from "./components/list-rendering/ArrayToListRender";
 import BrowserRouter from "./components/react-routing/BrowserRouter";
-
+import ParentComponent from "./components/lifting-state-up/AdvancedExample/ParentComponent";
+import Authenticate from "./components/higher-order-component/AuthenticateProfile/Authenticate";
+import UserProfile from "./components/higher-order-component/AuthenticateProfile/UserProfile";
+import ProgressDisplay from "./components/higher-order-component/DataFetching.js/ProgressDisplay";
+import FetchData from "./components/higher-order-component/DataFetching.js/FetchData";
+const AuthenticatedProfile = Authenticate(UserProfile);
+const FetchedData = FetchData(ProgressDisplay);
 function App() {
   return (
     <div>
@@ -115,9 +121,14 @@ function App() {
       <DisplayConfigDrivenUI />
         
 
-      <ControlledComponent />*/}
+      <ControlledComponent />
 
       <ArrayToListRender itemsArray={[1, 2, 4, 5]} />
+
+      <ParentComponent />
+
+      <AuthenticatedProfile />*/}
+      <FetchedData />
     </div>
   );
 }
