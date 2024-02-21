@@ -14,9 +14,14 @@ const ParentComponent = () => {
   };
 
   return (
-    <div>
+    <div className="w-4/12 mx-auto m-2 p-3 my-36 bg-pink-200 text-center rounded-lg  hover:border border-4 border-blue-500">
+      <h1 className="font-bold"> Example of One way data binding</h1>
+
       <h1> Parent</h1>
-      <button onClick={changeProps}> Change Props </button>
+      <button onClick={changeProps} className="bg-red-500 m-3 p-3 rounded-md">
+        {" "}
+        Change Props{" "}
+      </button>
       <ChildComponent propsToPass={propsToPass} />
     </div>
   );
