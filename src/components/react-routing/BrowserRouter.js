@@ -1,10 +1,13 @@
-import React from "react";
+import React, { lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import Contact from "./Contact";
-import LazyLoadedComponent from "../lazy-loading/LazyLoadedComponent";
 import { Suspense } from "react";
 import About from "./About";
 import ErrorPage from "./ErrorPage";
+
+const LazyLoadedComponent = lazy(() =>
+  import("../lazy-loading/LazyLoadedComponent")
+);
 
 const Contact = () => <h2>Contact Page</h2>;
 

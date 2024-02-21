@@ -36,11 +36,12 @@ import MyComponent from "./components/hooks_practice/UseEffect/Both_state_props_
 import ControlledComponent from "./components/controlled-component/ControlledComponent";
 import ArrayToListRender from "./components/list-rendering/ArrayToListRender";
 import BrowserRouter from "./components/react-routing/BrowserRouter";
-import ParentComponent from "./components/lifting-state-up/AdvancedExample/ParentComponent";
+// import ParentComponent from "./components/lifting-state-up/AdvancedExample/ParentComponent";
 import Authenticate from "./components/higher-order-component/AuthenticateProfile/Authenticate";
 import UserProfile from "./components/higher-order-component/AuthenticateProfile/UserProfile";
 import ProgressDisplay from "./components/higher-order-component/DataFetching.js/ProgressDisplay";
 import FetchData from "./components/higher-order-component/DataFetching.js/FetchData";
+import ParentComponent from "./components/one-way-data-binding/Advanced Example/ParentComponent";
 const AuthenticatedProfile = Authenticate(UserProfile);
 const FetchedData = FetchData(ProgressDisplay);
 function App() {
@@ -127,8 +128,10 @@ function App() {
 
       <ParentComponent />
 
-      <AuthenticatedProfile />*/}
-      <FetchedData />
+      <AuthenticatedProfile />
+      <FetchedData />*/}
+
+      <ParentComponent />
     </div>
   );
 }
