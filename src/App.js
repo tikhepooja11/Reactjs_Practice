@@ -42,6 +42,7 @@ import UserProfile from "./components/higher-order-component/AuthenticateProfile
 import ProgressDisplay from "./components/higher-order-component/DataFetching.js/ProgressDisplay";
 import FetchData from "./components/higher-order-component/DataFetching.js/FetchData";
 import ParentComponent from "./components/one-way-data-binding/Advanced Example/ParentComponent";
+import UseLayoutExample from "./components/hooks_practice/UseLayoutEffect/UseLayoutExample";
 const AuthenticatedProfile = Authenticate(UserProfile);
 const FetchedData = FetchData(ProgressDisplay);
 function App() {
@@ -129,9 +130,10 @@ function App() {
       <ParentComponent />
 
       <AuthenticatedProfile />
-      <FetchedData />*/}
+      <FetchedData />
 
-      <ParentComponent />
+      <ParentComponent />*/}
+      <UseLayoutExample />
     </div>
   );
 }
