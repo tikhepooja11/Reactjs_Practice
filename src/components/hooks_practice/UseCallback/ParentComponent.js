@@ -2,27 +2,39 @@ import React, { useState, useCallback } from "react";
 import Title from "./Title";
 import Count from "./Count";
 import Button from "./Button";
+import ChildComponent from "./ChildComponent";
 const ParentComponent = () => {
-  const [age, setAge] = useState(25);
-  const [salary, setSalary] = useState(50000);
+  const [count, setCount] = useState(0);
 
-  const incrementAge = useCallback(() => {
-    setAge(age + 1);
-  }, [age]);
+  // Without useCallback: a new function is created on every render
+  // const handleItemClick = (item) => {
+  //   console.log(`Item "${item}" clicked`);
+  //   setCount(count + 1);
+  // };
 
-  const incrementSalary = useCallback(() => {
-    setSalary(salary + 1000);
-  }, [salary]);
+  // With useCallback: the function is memoized and only re-created when dependencies change
+  const handleItemClick = useCallback(
+    (item) => {
+      console.log(`Item "${item}" clicked`);
+      setCount((prevCount) => prevCount + 1);
+    },
+    [setCount]
+  ); // Dependency array specifies when the function should be re-created
 
   return (
     <div>
-      <Title />
-      <Count text="Age" count={age} />
-      <Button className="bg-sky-500 m-10 p-3" handleClick={incrementAge}>
-        Increment Age
-      </Button>
-      <Count text="Salary" count={salary} />
-      <Button handleClick={incrementSalary}>Increment Salary</Button>
+      <h1>Click Counter</h1>
+      <p>Count: {count}</p>
+      <ul>
+        {/* Render a list of items with buttons */}
+        {["Item 1", "Item 2", "Item 3"].map((item) => (
+          <ChildComponent
+            key={item}
+            item={item}
+            onItemClick={handleItemClick}
+          />
+        ))}
+      </ul>
     </div>
   );
 };

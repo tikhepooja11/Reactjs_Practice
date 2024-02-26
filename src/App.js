@@ -41,8 +41,10 @@ import Authenticate from "./components/higher-order-component/AuthenticateProfil
 import UserProfile from "./components/higher-order-component/AuthenticateProfile/UserProfile";
 import ProgressDisplay from "./components/higher-order-component/DataFetching.js/ProgressDisplay";
 import FetchData from "./components/higher-order-component/DataFetching.js/FetchData";
-import ParentComponent from "./components/one-way-data-binding/Advanced Example/ParentComponent";
+// import ParentComponent from "./components/one-way-data-binding/Advanced Example/ParentComponent";
 import UseLayoutExample from "./components/hooks_practice/UseLayoutEffect/UseLayoutExample";
+import UseCallbackExample from "./components/hooks_practice/UseCallback/UseCallbackExample";
+import ParentComponent from "./components/hooks_practice/UseCallback/ParentComponent";
 const AuthenticatedProfile = Authenticate(UserProfile);
 const FetchedData = FetchData(ProgressDisplay);
 function App() {
@@ -132,8 +134,11 @@ function App() {
       <AuthenticatedProfile />
       <FetchedData />
 
-      <ParentComponent />*/}
+      <ParentComponent />
       <UseLayoutExample />
+
+      {/* <ParentComponent /> */}
+      <UseCallbackExample />
     </div>
   );
 }
