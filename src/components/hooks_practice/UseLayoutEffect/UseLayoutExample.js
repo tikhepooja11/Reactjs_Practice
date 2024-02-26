@@ -21,8 +21,8 @@ const UseLayoutExample = () => {
     setWidth((prevWidth) => prevWidth + 10);
   };
   return (
-    <div>
-      <h1> UseLayoutEffect </h1>
+    <div className="text-center mx-auto my-36 w-4/12 m-3 p-3 bg-green-200">
+      <h1> Resizable box using useLayoutEffect hook </h1>
       <div
         ref={boxRef}
         className="border border-black p-4"
